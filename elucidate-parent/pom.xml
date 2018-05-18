@@ -11,6 +11,7 @@
 	<modules>
 		<module>../elucidate-common-lib</module>
 		<module>../elucidate-converter</module>
+		<module>../elucidate-db-scripts</module>
 		<module>../elucidate-server</module>
 	</modules>
 
