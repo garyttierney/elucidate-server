@@ -37,7 +37,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>dlcs/elucidate</repository>
+					<repository>garyttierneydi/elucidate-server</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
 						<ARTIFACT_NAME>${project.build.finalName}.war</ARTIFACT_NAME>
