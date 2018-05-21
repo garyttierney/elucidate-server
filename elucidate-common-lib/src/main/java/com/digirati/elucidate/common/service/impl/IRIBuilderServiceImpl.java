@@ -45,6 +45,10 @@ public class IRIBuilderServiceImpl implements IRIBuilderService {
             builder.setPort(basePort);
         }
 
+        if (basePath.endsWith("/")) {
+            basePath = basePath.substring(0, basePath.length() - 1);
+        }
+
         builder.setPath(basePath);
         return builder.toString();
     }
