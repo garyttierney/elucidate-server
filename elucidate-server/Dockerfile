@@ -9,12 +9,12 @@ MAINTAINER Gary Tierney <gary.tierney@digirati.com>
 EXPOSE 8080
 
 ARG ARTIFACT_NAME="annotation.war"
-ADD target/${ARTIFACT_NAME} /usr/local/tomcat/webapps/annotations.war
+ADD target/${ARTIFACT_NAME} /usr/local/tomcat/webapps/annotation.war
 
 ENV BASE_SCHEME="http"
 ENV BASE_HOST="localhost"
 ENV BASE_PORT="8080"
-ENV BASE_PATH="/annotations/"
+ENV BASE_PATH="/annotation"
 
 ENV DATABASE_URL="jdbc:postgresql://database:5432/annotations"
 ENV DATABASE_USER="annotations_user"

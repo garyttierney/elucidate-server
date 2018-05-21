@@ -4,7 +4,6 @@ RUN mkdir -p  /usr/share/elucidate/bootstrap-scripts
 COPY ./ /usr/share/elucidate/bootstrap-scripts/
 RUN paste -s -d'\n' /usr/share/elucidate/bootstrap-scripts/group_roles/annotations_role.sql \
     /usr/share/elucidate/bootstrap-scripts/login_roles/annotations_user.sql \
-    /usr/share/elucidate/bootstrap-scripts/annotations.sql \
     /usr/share/elucidate/bootstrap-scripts/tables/annotation_collection.sql \
     /usr/share/elucidate/bootstrap-scripts/tables/annotation.sql \
     /usr/share/elucidate/bootstrap-scripts/tables/annotation_body.sql \
